@@ -49,6 +49,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ily-GH-qgX">
+                                <rect key="frame" x="163" y="167" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -57,6 +60,8 @@
                             <constraint firstItem="Dpb-A6-A7E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-93" id="JMW-Nn-Sij"/>
                             <constraint firstItem="Dpb-A6-A7E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZh-FE-EB3"/>
                             <constraint firstItem="dtL-FC-8LF" firstAttribute="top" secondItem="Dpb-A6-A7E" secondAttribute="bottom" constant="63" id="Q8o-OO-8Vo"/>
+                            <constraint firstItem="ily-GH-qgX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UZK-sz-yeC"/>
+                            <constraint firstItem="B6j-pA-Wku" firstAttribute="top" secondItem="ily-GH-qgX" secondAttribute="bottom" constant="35" id="YC7-Tc-VMK"/>
                             <constraint firstItem="dtL-FC-8LF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YM0-9F-vyx"/>
                             <constraint firstItem="FId-wi-who" firstAttribute="top" secondItem="dtL-FC-8LF" secondAttribute="bottom" constant="40" id="i6D-VY-Rg3"/>
                             <constraint firstItem="FId-wi-who" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcJ-Xq-9NV"/>
@@ -66,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="ily-GH-qgX" id="swj-o3-P1u"/>
                         <outlet property="bottomTextField" destination="Dpb-A6-A7E" id="XRi-P5-Cgj"/>
                         <outlet property="myLable" destination="FId-wi-who" id="ms1-hj-elk"/>
                         <outlet property="topTextField" destination="B6j-pA-Wku" id="2pY-II-K3u"/>

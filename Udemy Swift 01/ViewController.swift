@@ -19,13 +19,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bottomTextField: UITextField!
     
+    @IBOutlet weak var additionSwitch: UISwitch!
     
     @IBAction func buttenTapped(_ sender: Any) {
       
-        var sum = 0.0
-        sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
-       // myLable.text = "The Sum is: " + String(sum)
-        myLable.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(Int(sum))"
+        let addition = additionSwitch.isOn
+        
+        if addition {
+        
+            var sum = 0.0
+            sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            // myLable.text = "The Sum is: " + String(sum)
+            myLable.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(Int(sum))"
+        } else {
+            
+            var sum = 0.0
+            sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            // myLable.text = "The Sum is: " + String(sum)
+            myLable.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(Int(sum))"
+        }
+        
         
         //print(topTextField.text!)
         //print(bottomTextField.text!)
