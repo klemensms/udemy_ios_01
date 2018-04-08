@@ -12,13 +12,24 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    var buttonCount = 0
-    
+   // var buttonCount = 0
     @IBOutlet weak var myLable: UILabel!
-    
 
+    @IBOutlet weak var topTextField: UITextField!
+    
+    @IBOutlet weak var bottomTextField: UITextField!
+    
+    
     @IBAction func buttenTapped(_ sender: Any) {
+      
+        var sum = 0.0
+        sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+       // myLable.text = "The Sum is: " + String(sum)
+        myLable.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(Int(sum))"
         
+        //print(topTextField.text!)
+        //print(bottomTextField.text!)
+  /*
         buttonCount += 1
         print(buttonCount)
         if buttonCount > 3 {
@@ -30,7 +41,8 @@ class ViewController: UIViewController {
         
         view.backgroundColor = UIColor.red
         myLable.text = "My name is Klemens"
-        }
+ */
+        
     }
     
     override func viewDidLoad() {

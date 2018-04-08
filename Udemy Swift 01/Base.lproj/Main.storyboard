@@ -18,31 +18,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FId-wi-who">
-                                <rect key="frame" x="169" y="461" width="37" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FId-wi-who">
+                                <rect key="frame" x="163.66666666666666" y="461" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-FC-8LF">
-                                <rect key="frame" x="144.66666666666666" y="391" width="87" height="30"/>
-                                <state key="normal" title="hit me hard!!"/>
+                                <rect key="frame" x="154.66666666666666" y="391" width="66" height="30"/>
+                                <state key="normal" title="calculate!"/>
                                 <connections>
                                     <action selector="buttenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WpZ-ys-gP8"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B6j-pA-Wku">
+                                <rect key="frame" x="137.66666666666666" y="233" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="f6Q-qR-g8D"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dpb-A6-A7E">
+                                <rect key="frame" x="137.66666666666666" y="298" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CXJ-Gw-QkS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="B6j-pA-Wku" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5od-bS-zpz"/>
                             <constraint firstItem="dtL-FC-8LF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DtU-Dr-4Yp"/>
+                            <constraint firstItem="Dpb-A6-A7E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-93" id="JMW-Nn-Sij"/>
+                            <constraint firstItem="Dpb-A6-A7E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZh-FE-EB3"/>
+                            <constraint firstItem="dtL-FC-8LF" firstAttribute="top" secondItem="Dpb-A6-A7E" secondAttribute="bottom" constant="63" id="Q8o-OO-8Vo"/>
                             <constraint firstItem="dtL-FC-8LF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YM0-9F-vyx"/>
                             <constraint firstItem="FId-wi-who" firstAttribute="top" secondItem="dtL-FC-8LF" secondAttribute="bottom" constant="40" id="i6D-VY-Rg3"/>
                             <constraint firstItem="FId-wi-who" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcJ-Xq-9NV"/>
+                            <constraint firstItem="dtL-FC-8LF" firstAttribute="top" secondItem="B6j-pA-Wku" secondAttribute="bottom" constant="128" id="w6c-NZ-eoq"/>
+                            <constraint firstItem="B6j-pA-Wku" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-158" id="wxo-Nr-3rl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomTextField" destination="Dpb-A6-A7E" id="XRi-P5-Cgj"/>
                         <outlet property="myLable" destination="FId-wi-who" id="ms1-hj-elk"/>
+                        <outlet property="topTextField" destination="B6j-pA-Wku" id="2pY-II-K3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
