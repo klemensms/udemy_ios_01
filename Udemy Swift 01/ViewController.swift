@@ -5,8 +5,7 @@
 //  Created by Klemens Stelk on 08/04/2018.
 //  Copyright © 2018 Klemens Stelk. All rights reserved...
 //
-//hi there chicken dog!
-// another change to be made
+//final change
 
 import UIKit
 
